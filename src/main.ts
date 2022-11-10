@@ -1,6 +1,6 @@
 import { defineCustomElement } from './defineCustomElementWithStyles'
-import Example from './App.ce.vue' // 引入
+import App from './App.ce.vue' // 引入
 
-const ExampleElement = defineCustomElement(Example) // 生成 HTMLElement 构造函数
+const AppElement = defineCustomElement(App) // 生成 HTMLElement 构造函数
 
-customElements.define('my-example', ExampleElement) // 注册
+customElements.define('simple-rating-widget', AppElement) // 注册

@@ -32,6 +32,18 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.5s;

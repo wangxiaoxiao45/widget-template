@@ -1,7 +1,7 @@
 /** @format */
 
 import { defineCustomElement as VueDefineCustomElement, h, createApp, getCurrentInstance } from 'vue'
-
+import vueI18n from './i18n'
 const nearestElement = (el) => {
   while (el?.nodeType !== 1 /* ELEMENT */) el = el.parentElement
   return el
@@ -38,7 +38,7 @@ export const defineCustomElement = (component, { globalComponents = {}, plugins 
           this.__style?.remove()
         },
       })
-
+      app.use(vueI18n)
       const inst = getCurrentInstance()
       Object.assign(inst.appContext, app._context)
       return () => h(component, props)
