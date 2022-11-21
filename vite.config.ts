@@ -15,11 +15,11 @@ export default defineConfig(({ mode }) => {
       },
     },
     build: {
-      assetsDir: 'rating-breakdown-widget',
+      assetsDir: 'widget-demo',
       rollupOptions: {
         output: {
-          entryFileNames: `rating-breakdown-widget/[name].js`, // 入口文件
-          assetFileNames: `rating-breakdown-widget/[name].[ext]`,
+          entryFileNames: `widget-demo/[name].js`, // 入口文件
+          assetFileNames: `widget-demo/[name].[ext]`,
         },
       },
     },
